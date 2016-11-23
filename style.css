@@ -84,6 +84,14 @@
 }
 #fillCanvas:hover { opacity: 0.5; }
 
+#line{
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    
+}
+#line:hover { opacity: 0.5; }
+
 #saveCanvas{
     float: right;
     margin-left: 30px;

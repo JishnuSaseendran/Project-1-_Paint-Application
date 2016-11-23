@@ -7,6 +7,7 @@ var dragging = false;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+function pencil(){
 window.onresize = function(){
     var image = context.getImageData(0,0,canvas.width, canvas.height);
     canvas.width = window.innerWidth;
@@ -41,7 +42,7 @@ var disengage = function(){
 canvas.addEventListener('mousedown', engage);
 canvas.addEventListener('mousemove', putPoint);
 canvas.addEventListener('mouseup', disengage);
-
+}
 
 
 
