@@ -59,3 +59,13 @@ clearButton.addEventListener('click', clear);
 function clear() { context.clearRect(0, 0, canvas.width, canvas.height); }
 
 
+var saveButton = document.getElementById('saveCanvas');
+saveButton.addEventListener('click', save);
+function save() { 
+    var data = canvas.toDataURL();
+    window.open(data, '_blank', 'location=0, menubar=0');    
+}
+
+
+
+
